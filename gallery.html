@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Галерея — Gorynych</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="badge"></span><span>ART-PUB GORYNYCH</span></a>
+    <nav class="links">
+      <a class="chip" href="menu.html">Меню</a>
+      <a class="chip" href="gallery.html">Галерея</a>
+      <a class="chip" href="booking.html">Бронювання</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1 class="title">Галерея</h1>
+    <div class="hint">Клік по фото → повний перегляд (без обрізки).</div>
+    <div class="masonry" id="galleryGrid"></div>
+  </div>
+</main>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true">
+    <div class="modal-top">
+      <strong>Перегляд</strong>
+      <button class="icon" id="mClose" aria-label="Закрити">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="media"><img id="mImg" alt=""></div>
+      <div class="info">
+        <h2 id="mTitle"></h2>
+        <p class="desc" id="mDesc"></p>
+        <div class="hint">ESC або клік поза вікном — закрити.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/menu-data.js"></script>
+<script src="assets/js/extra-images.js"></script>
+<script src="assets/js/gallery.js"></script>
+
+<footer class="footer">
+  <div class="container">
+    <div>© ART-PUB GORYNYCH • Чернігів</div>
+    <div class="hint">Всі фото лежать у <code>assets/images</code>. На фото у модальному вікні обрізки немає (contain).</div>
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body></html>

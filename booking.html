@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Бронювання — Gorynych</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="badge"></span><span>ART-PUB GORYNYCH</span></a>
+    <nav class="links">
+      <a class="chip" href="menu.html">Меню</a>
+      <a class="chip" href="gallery.html">Галерея</a>
+      <a class="chip" href="booking.html">Бронювання</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1 class="title">Бронювання</h1>
+    <div class="notice" style="margin-bottom:14px">
+      Це статична форма: вона сформує текст заявки, який можна скопіювати та надіслати адміністратору.
+    </div>
+
+    <div class="grid">
+      <div style="grid-column:span 7">
+        <form class="form" id="bookingForm">
+          <input class="input" name="name" placeholder="Ім'я" required>
+          <input class="input" name="phone" placeholder="Телефон" required>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <input class="input" type="date" name="date" required>
+            <input class="input" type="time" name="time" required>
+          </div>
+          <input class="input" type="number" min="1" max="30" name="guests" placeholder="Кількість гостей" required>
+          <textarea class="input" name="note" placeholder="Коментар (за бажанням)"></textarea>
+          <button class="btn primary" type="submit">Сформувати заявку</button>
+        </form>
+      </div>
+      <div style="grid-column:span 5">
+        <div id="bookingOut"></div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="assets/js/booking.js"></script>
+
+<footer class="footer">
+  <div class="container">
+    <div>© ART-PUB GORYNYCH • Чернігів</div>
+    <div class="hint">Всі фото лежать у <code>assets/images</code>. На фото у модальному вікні обрізки немає (contain).</div>
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body></html>
